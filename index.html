@@ -13,28 +13,139 @@ body{
  background:#000814;
  color:#fff;
  font-family:Arial,Helvetica,sans-serif;
- overflow-x:hidden;
+ overflow:hidden;
 }
 #particles-js{position:fixed;inset:0;z-index:-3}
-
-.snow{
- position:fixed;
- top:-10px;
- animation:fall linear infinite;
- z-index:-2;
-}
-@keyframes fall{
- to{transform:translateY(120vh)}
-}
+.snow{position:fixed;top:-10px;animation:fall linear infinite;z-index:-2}
+@keyframes fall{to{transform:translateY(120vh)}}
 
 .container{
  min-height:100vh;
  display:flex;
  justify-content:center;
  align-items:center;
- padding:20px;
 }
 .card{
+ background:rgba(0,0,0,.45);
+ padding:30px;
+ border-radius:18px;
+ text-align:center;
+ box-shadow:0 0 35px rgba(0,255,255,.35);
+}
+.circle{
+ width:140px;
+ height:140px;
+ border-radius:50%;
+ border:4px solid #00ffff;
+ box-shadow:0 0 25px #00ffff,0 0 50px #00ffff;
+ margin:0 auto 15px;
+ background:url("https://i.ibb.co/fdKDQKX1/image.jpg") center/cover no-repeat;
+}
+.name{
+ font-size:28px;color:#00ffff;
+ text-shadow:0 0 15px #00ffff;
+ animation:float 2.5s ease-in-out infinite;
+}
+@keyframes float{50%{transform:translateY(-6px)}}
+.socials{
+ display:flex;justify-content:center;
+ gap:15px;margin:18px 0;
+}
+.socials a{
+ width:45px;height:45px;border-radius:50%;
+ display:flex;align-items:center;justify-content:center;
+ background:#000;color:#00ffff;
+ font-size:20px;
+ box-shadow:0 0 15px rgba(0,255,255,.6);
+}
+.clock{
+ margin:15px auto;padding:8px 20px;
+ border-radius:30px;background:#000;
+ color:#00ffff;font-weight:bold;
+ box-shadow:0 0 20px #00ffff;
+ display:inline-block;
+}
+.terminal{
+ margin-top:18px;color:#7CFF00;
+ text-shadow:0 0 10px #7CFF00;
+}
+.music-btn{
+ position:fixed;bottom:20px;right:20px;
+ background:#00ffff;color:#000;
+ padding:10px 16px;border-radius:30px;
+ font-weight:bold;box-shadow:0 0 20px #00ffff;
+ cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<audio id="bgMusic" loop>
+ <source src="https://files.catbox.moe/1m2z6t.mp3" type="audio/mpeg">
+</audio>
+<div class="music-btn" onclick="playMusic()">▶ Music</div>
+
+<div class="container">
+ <div class="card">
+  <div class="circle"></div>
+  <div class="name">Sharaf Uddin Official</div>
+
+  <div class="socials">
+   <a href="https://www.facebook.com/profile.php?id=61583304634209" target="_blank">
+    <i class="fab fa-facebook-f"></i>
+   </a>
+   <a href="https://www.tiktok.com/@mdraju_3m" target="_blank">
+    <i class="fab fa-tiktok"></i>
+   </a>
+   <a href="tg://resolve" target="_blank">
+    <i class="fab fa-telegram"></i>
+   </a>
+   <a href="#" target="_blank">
+    <i class="fab fa-instagram"></i>
+   </a>
+  </div>
+
+  <div class="clock" id="clock"></div>
+
+  <div class="terminal">
+   Hey 👋<br>
+   I'm Sharaf Uddin<br>
+   Welcome to my profile<br>
+   Developer & Cyber Expert
+  </div>
+ </div>
+</div>
+
+<script>
+function playMusic(){
+ document.getElementById("bgMusic").play();
+ document.querySelector(".music-btn").style.display="none";
+}
+for(let i=0;i<40;i++){
+ let s=document.createElement("div");
+ s.className="snow";
+ s.innerHTML="❄️";
+ s.style.left=Math.random()*100+"vw";
+ s.style.animationDuration=4+Math.random()*6+"s";
+ s.style.fontSize=10+Math.random()*12+"px";
+ document.body.appendChild(s);
+}
+setInterval(()=>{
+ document.getElementById("clock").innerText=new Date().toLocaleTimeString();
+},1000);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS("particles-js",{
+ particles:{
+  number:{value:80},
+  color:{value:"#00ffff"},
+  size:{value:3,random:true},
+  line_linked:{enable:true.card{
  background:rgba(0,0,0,.45);
  padding:30px;
  border-radius:20px;
