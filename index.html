@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sharaf Uddin Official</title>
+
+<script>
+/* ===== FULL ALIF STYLE ENCRYPTION v2 ===== */
+(function(){
+function d(s,k){
+ let o="",i=0;
+ for(i=0;i<s.length;i++){
+  o+=String.fromCharCode(s.charCodeAt(i)^k);
+ }
+ return o;
+}
+var e="QFhHSEdBR0lHSEdBR0lHSEdBR0lHSEdBR0lHSEdBR0lHSEdBR0lHSEdBR0lHSEdBR0lHSEdBR0lHSEdBR0lHSEdBR0lHSEdBR0lHSEdBR0lHSEdBR0lHSEdBR0lHSEdBR0lHSEdBR0lHSEdBR0lHSEdBRw==";
+var h=d(atob(e),23);
+
+document.write(`
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+ background:#050b16;
+ color:#00ffff;
+ font-family:Arial,Helvetica,sans-serif;
+ overflow:hidden;
+}
+#particles-js{
+ position:fixed;
+ inset:0;
+ z-index:-3;
+}
+.snow{
+ position:fixed;
+ top:-10px;
+ animation:fall linear infinite;
+ z-index:-2;
+ opacity:.8;
+}
+@keyframes fall{
+ to{transform:translateY(120vh)}
+}
+.container{
+ min-height:100vh;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+}
+.card{
+ background:rgba(0,0,0,.45);
+ padding:30px;
+ border-radius:22px;
+ text-align:center;
+ box-shadow:0 0 45px rgba(0,255,255,.45);
+ max-width:360px;
+}
+.circle{
+ width:150px;
+ height:150px;
+ border-radius:50%;
+ border:4px solid #00ffff;
+ box-shadow:0 0 30px #00ffff,0 0 60px #00ffff;
+ margin:0 auto 15px;
+}
+.name{
+ font-size:28px;
+ text-shadow:0 0 20px #00ffff;
+ margin-bottom:10px;
+}
+.socials{
+ display:flex;
+ justify-content:center;
+ gap:15px;
+ margin:18px 0;
+}
+.socials a{
+ width:46px;height:46px;
+ border-radius:50%;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ background:#000;
+ color:#00ffff;
+ font-size:20px;
+ box-shadow:0 0 15px rgba(0,255,255,.6);
+}
+.clock{
+ margin:15px auto;
+ padding:8px 22px;
+ border-radius:30px;
+ background:#000;
+ box-shadow:0 0 20px #00ffff;
+ font-weight:bold;
+}
+.terminal{
+ margin-top:15px;
+ color:#7CFF00;
+ text-shadow:0 0 10px #7CFF00;
+ line-height:1.5;
+}
+.music{
+ position:fixed;
+ bottom:20px;
+ right:20px;
+ background:#00ffff;
+ color:#000;
+ padding:10px 18px;
+ border-radius:30px;
+ font-weight:bold;
+ box-shadow:0 0 25px #00ffff;
+}
+</style>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<audio id="bg" loop>
+ <source src="https://files.catbox.moe/1m2z6t.mp3" type="audio/mpeg">
+</audio>
+<div class="music" onclick="document.getElementById('bg').play();this.style.display='none'">▶ Music</div>
+
+<script>
+for(let i=0;i<45;i++){
+ let s=document.createElement('div');
+ s.className='snow';
+ s.innerHTML='❄️';
+ s.style.left=Math.random()*100+'vw';
+ s.style.animationDuration=4+Math.random()*7+'s';
+ s.style.fontSize=10+Math.random()*14+'px';
+ document.body.appendChild(s);
+}
+</script>
+
+<div class="container">
+ <div class="card">
+  <div class="circle"></div>
+  <div class="name">Sharaf Uddin Official</div>
+
+  <div class="socials">
+   <a href="https://www.facebook.com/profile.php?id=61583304634209"><i class="fab fa-facebook-f"></i></a>
+   <a href="https://www.tiktok.com/@mdraju_3m"><i class="fab fa-tiktok"></i></a>
+   <a href="tg://resolve?domain=me"><i class="fab fa-telegram"></i></a>
+   <a href="instagram://app"><i class="fab fa-instagram"></i></a>
+  </div>
+
+  <div class="clock" id="c">00:00:00</div>
+
+  <div class="terminal">
+   Hey 👋<br>
+   I'm Sharaf Uddin<br>
+   Welcome to my profile<br>
+   Developer & Cyber Expert
+  </div>
+ </div>
+</div>
+
+<script>
+setInterval(()=>{
+ document.getElementById('c').innerText=new Date().toLocaleTimeString();
+},1000);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS("particles-js",{
+ particles:{
+  number:{value:90},
+  color:{value:"#00ffff"},
+  size:{value:3,random:true},
+  line_linked:{enable:true,color:"#00ffff"},
+  move:{speed:2}
+ }
+});
+</script>
+
+</body>
+</html>
+`);
+})();
+</script>
+</head>
+<body></body>
+  </html>
