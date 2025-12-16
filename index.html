@@ -10,31 +10,236 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{
- background:#000814;
+ background:#020617;
  color:#fff;
  font-family:Arial,Helvetica,sans-serif;
- overflow:hidden;
+ overflow-x:hidden;
+}
+#particles-js{position:fixed;inset:0;z-index:-3}
+
+.snow{position:fixed;top:-10px;animation:fall linear infinite;z-index:-2}
+@keyframes fall{to{transform:translateY(120vh)}}
+
+.container{max-width:420px;margin:auto;padding:20px}
+.card{
+ background:rgba(0,0,0,.5);
+ padding:25px;
+ border-radius:20px;
+ box-shadow:0 0 30px rgba(0,255,255,.35);
+ margin-bottom:25px;
+ text-align:center;
 }
 
-/* particles */
-#particles-js{
- position:fixed;
- inset:0;
- z-index:-3;
+.avatar{
+ width:150px;height:150px;border-radius:50%;
+ border:4px solid #00ffff;
+ box-shadow:0 0 25px #00ffff;
+ margin:10px auto;
+ background:#000;
 }
 
-/* snow */
-.snow{
- position:fixed;
- top:-10px;
- animation:fall linear infinite;
- z-index:-2;
-}
-@keyframes fall{
- to{transform:translateY(120vh)}
+.name{
+ font-size:28px;
+ color:#00ffff;
+ text-shadow:0 0 15px #00ffff;
+ margin:10px 0;
 }
 
-/* center */
+.socials{display:flex;justify-content:center;gap:14px;margin:15px 0}
+.socials a{
+ width:48px;height:48px;border-radius:50%;
+ background:#000;color:#00ffff;
+ display:flex;align-items:center;justify-content:center;
+ font-size:20px;
+ box-shadow:0 0 15px rgba(0,255,255,.6);
+}
+
+.clock{
+ display:inline-block;
+ padding:8px 22px;
+ border-radius:30px;
+ background:#000;
+ color:#00ffff;
+ box-shadow:0 0 20px #00ffff;
+ font-weight:bold;
+ margin:15px 0;
+}
+
+.terminal{
+ color:#7CFF00;
+ text-shadow:0 0 10px #7CFF00;
+ margin-top:15px;
+}
+
+.section-title{
+ color:#00ffff;
+ font-size:20px;
+ margin-bottom:10px;
+ text-shadow:0 0 10px #00ffff;
+}
+
+.box{
+ border:2px solid #00ffff;
+ border-radius:15px;
+ padding:15px;
+ margin-top:15px;
+}
+
+.skill-icons{
+ display:flex;
+ justify-content:space-around;
+ font-size:26px;
+ color:#00ffff;
+ margin-top:10px;
+}
+
+.log{
+ background:#000;
+ color:#7CFF00;
+ padding:15px;
+ border-radius:12px;
+ font-family:monospace;
+ font-size:14px;
+}
+
+.tags{
+ display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:10px
+}
+.tag{
+ background:#111;
+ padding:8px 14px;
+ border-radius:20px;
+ box-shadow:0 0 10px rgba(0,255,255,.4);
+}
+
+.music-btn{
+ position:fixed;bottom:20px;right:20px;
+ background:#00ffff;color:#000;
+ padding:12px 18px;border-radius:30px;
+ font-weight:bold;box-shadow:0 0 20px #00ffff;
+}
+</style>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<audio id="bgMusic" loop>
+ <source src="https://files.catbox.moe/1m2z6t.mp3" type="audio/mpeg">
+</audio>
+<div class="music-btn" onclick="playMusic()">▶ Music</div>
+
+<div class="container">
+
+<!-- PROFILE -->
+<div class="card">
+ <div class="avatar"></div>
+ <div class="name">Sharaf Uddin Official</div>
+
+ <div class="socials">
+  <a href="https://www.facebook.com/profile.php?id=61583304634209" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.tiktok.com/@mdraju_3m?_r=1&_t=ZS-92H5AfHBA1K" target="_blank"><i class="fab fa-tiktok"></i></a>
+  <a href="tg://resolve"><i class="fab fa-telegram"></i></a>
+ </div>
+
+ <div class="clock" id="clock"></div>
+
+ <div class="terminal">
+  Hey 👋<br>
+  I'm Sharaf Uddin<br>
+  Welcome to my profile<br>
+  Developer & Cyber Expert
+ </div>
+</div>
+
+<!-- SKILLS -->
+<div class="card">
+ <div class="section-title">Skills</div>
+ <div class="skill-icons">
+  <i class="fab fa-js"></i>
+  <i class="fab fa-html5"></i>
+  <i class="fab fa-css3-alt"></i>
+  <i class="fab fa-python"></i>
+  <i class="fab fa-php"></i>
+ </div>
+</div>
+
+<!-- PROJECT -->
+<div class="card">
+ <div class="section-title">Project Highlights</div>
+ <div class="box">
+  Hover over a skill to see project details here.
+ </div>
+</div>
+
+<!-- TERMINAL LOG -->
+<div class="card">
+ <div class="log">
+ Initializing system...<br>
+ Loading modules...<br>
+ Accessing secure server...<br>
+ Decrypting data...<br>
+ Connection established ✅<br>
+ Running scripts...<br>
+ Monitoring network traffic...
+ </div>
+</div>
+
+<!-- ABOUT -->
+<div class="card">
+ <div class="section-title">About Me</div>
+ Hi, I'm Sharaf Uddin, a passionate developer & cyber expert.  
+ I love automation, bots, and cybersecurity.
+</div>
+
+<!-- TAGS -->
+<div class="card">
+ <div class="tags">
+  <div class="tag">Bot Creator</div>
+  <div class="tag">Cybersecurity</div>
+  <div class="tag">Automation</div>
+  <div class="tag">Always Learning</div>
+ </div>
+</div>
+
+</div>
+
+<script>
+function playMusic(){
+ document.getElementById("bgMusic").play();
+ document.querySelector(".music-btn").style.display="none";
+}
+setInterval(()=>{
+ document.getElementById("clock").innerText=new Date().toLocaleTimeString();
+},1000);
+
+for(let i=0;i<35;i++){
+ let s=document.createElement("div");
+ s.className="snow";
+ s.innerHTML="❄️";
+ s.style.left=Math.random()*100+"vw";
+ s.style.animationDuration=4+Math.random()*6+"s";
+ s.style.fontSize=10+Math.random()*12+"px";
+ document.body.appendChild(s);
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS("particles-js",{
+ particles:{
+  number:{value:70},
+  color:{value:"#00ffff"},
+  size:{value:3,random:true},
+  line_linked:{enable:true,color:"#00ffff"},
+  move:{speed:2}
+ }
+});
+</script>
+
+</body>
+</html>/* center */
 .container{
  min-height:100vh;
  display:flex;
