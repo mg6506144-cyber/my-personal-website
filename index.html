@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sharaf Uddin Official</title>
+<title>My Cyber Profile</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -11,7 +11,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 
 body{
-  background:#000814;
+  background:#0a001f;
   color:#fff;
   font-family:Arial,Helvetica,sans-serif;
   overflow:hidden;
@@ -24,11 +24,15 @@ body{
   z-index:-3;
 }
 
-/* snow */
-.snow{
+/* digital rain */
+.rain{
   position:fixed;
-  top:-10px;
+  top:-50px;
+  color:#ff00ff;
+  font-family:monospace;
+  font-size:18px;
   animation:fall linear infinite;
+  opacity:0.6;
   z-index:-2;
 }
 @keyframes fall{
@@ -43,11 +47,11 @@ body{
   align-items:center;
 }
 .card{
-  background:rgba(0,0,0,.45);
+  background:rgba(0,0,0,.5);
   padding:30px;
   border-radius:18px;
   text-align:center;
-  box-shadow:0 0 35px rgba(0,255,255,.35);
+  box-shadow:0 0 35px rgba(255,0,255,.4);
 }
 
 /* profile image */
@@ -55,8 +59,8 @@ body{
   width:140px;
   height:140px;
   border-radius:50%;
-  border:4px solid #00ffff;
-  box-shadow:0 0 25px #00ffff,0 0 50px #00ffff;
+  border:4px solid #ff00ff;
+  box-shadow:0 0 25px #ff00ff,0 0 50px #ff00ff;
   margin:0 auto 15px;
   object-fit:cover;
 }
@@ -64,8 +68,8 @@ body{
 /* name */
 .name{
   font-size:28px;
-  color:#00ffff;
-  text-shadow:0 0 15px #00ffff;
+  color:#ff00ff;
+  text-shadow:0 0 15px #ff00ff;
   animation:float 2.5s ease-in-out infinite;
 }
 @keyframes float{
@@ -87,14 +91,14 @@ body{
   align-items:center;
   justify-content:center;
   background:#000;
-  color:#00ffff;
+  color:#ff00ff;
   font-size:20px;
-  box-shadow:0 0 15px rgba(0,255,255,.6);
+  box-shadow:0 0 15px rgba(255,0,255,.6);
   transition:.3s;
 }
 .socials a:hover{
   transform:scale(1.15);
-  background:#00ffff;
+  background:#ff00ff;
   color:#000;
 }
 
@@ -104,17 +108,17 @@ body{
   padding:8px 20px;
   border-radius:30px;
   background:#000;
-  color:#00ffff;
+  color:#ff00ff;
   font-weight:bold;
-  box-shadow:0 0 20px #00ffff;
+  box-shadow:0 0 20px #ff00ff;
   display:inline-block;
 }
 
 /* terminal */
 .terminal{
   margin-top:18px;
-  color:#7CFF00;
-  text-shadow:0 0 10px #7CFF00;
+  color:#00ffcc;
+  text-shadow:0 0 10px #00ffcc;
 }
 
 /* music */
@@ -122,12 +126,12 @@ body{
   position:fixed;
   bottom:20px;
   right:20px;
-  background:#00ffff;
+  background:#ff00ff;
   color:#000;
   padding:10px 16px;
   border-radius:30px;
   font-weight:bold;
-  box-shadow:0 0 20px #00ffff;
+  box-shadow:0 0 20px #ff00ff;
   cursor:pointer;
 }
 </style>
@@ -137,9 +141,9 @@ body{
 
 <div id="particles-js"></div>
 
-<!-- MUSIC -->
+<!-- MUSIC (Royalty-free cyberpunk track from Pixabay) -->
 <audio id="bgMusic" loop>
-  <source src="https://files.catbox.moe/1m2z6t.mp3" type="audio/mpeg">
+  <source src="https://cdn.pixabay.com/download/audio/2022/08/15/audio_3d3b8c8a0c.mp3?filename=cyberpunk-121110.mp3" type="audio/mpeg">
 </audio>
 
 <div class="music-btn" onclick="playMusic()">▶ Play Music</div>
@@ -147,41 +151,36 @@ body{
 <div class="container">
   <div class="card">
 
-    <!-- ✅ তোমার দেওয়া ছবির URL -->
+    <!-- তোমার নিজের ছবি চেঞ্জ করো, এটা উদাহরণ -->
     <img 
-      src="https://i.ibb.co/9qH2gQH/image.jpg"
+      src="https://img.freepik.com/premium-photo/portrait-young-man-with-vr-glasses-immersed-virtual-reality-abstract-neon-light-surreal-background-creative-art-technology-metauniverse-3d-rendering-ai-generated_187882-3875.jpg"
       class="profile-img"
-      alt="Sharaf Uddin">
+      alt="My Profile">
 
-    <div class="name">Sharaf Uddin Official</div>
+    <div class="name">Your Name Official</div>
 
     <div class="socials">
-      <a href="https://www.facebook.com/profile.php?id=61583304634209" target="_blank">
+      <a href="https://facebook.com/yourprofile" target="_blank">
         <i class="fab fa-facebook-f"></i>
       </a>
-
-      <a href="https://www.tiktok.com/@mdraju_3m?_r=1&_t=ZS-92H5AfHBA1K" target="_blank">
+      <a href="https://tiktok.com/@yourusername" target="_blank">
         <i class="fab fa-tiktok"></i>
       </a>
-
-      <!-- Telegram app only -->
-      <a href="tg://">
-        <i class="fab fa-telegram"></i>
+      <a href="https://youtube.com/@yourchannel" target="_blank">
+        <i class="fab fa-youtube"></i>
       </a>
-
-      <!-- Instagram app only -->
-      <a href="instagram://app">
-        <i class="fab fa-instagram"></i>
+      <a href="https://github.com/yourusername" target="_blank">
+        <i class="fab fa-github"></i>
       </a>
     </div>
 
     <div class="clock" id="clock">00:00:00</div>
 
     <div class="terminal">
-      Hey 👋<br>
-      I'm Sharaf Uddin<br>
-      Welcome to my profile<br>
-      Developer & Cyber Expert
+      Hey Hacker 👾<br>
+      I'm [Your Name]<br>
+      Welcome to my digital world<br>
+      Full Stack Developer & Ethical Hacker
     </div>
 
   </div>
@@ -194,21 +193,21 @@ function playMusic(){
   document.querySelector(".music-btn").style.display="none";
 }
 
-/* snow */
-for(let i=0;i<40;i++){
-  let s=document.createElement("div");
-  s.className="snow";
-  s.innerHTML="❄️";
-  s.style.left=Math.random()*100+"vw";
-  s.style.animationDuration=4+Math.random()*6+"s";
-  s.style.fontSize=10+Math.random()*12+"px";
-  document.body.appendChild(s);
+/* digital rain (Matrix style) */
+const chars = "01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン";
+for(let i=0;i<50;i++){
+  let r = document.createElement("div");
+  r.className="rain";
+  r.innerText = chars[Math.floor(Math.random()*chars.length)];
+  r.style.left = Math.random()*100 + "vw";
+  r.style.animationDuration = 2 + Math.random()*4 + "s";
+  r.style.animationDelay = Math.random()*5 + "s";
+  document.body.appendChild(r);
 }
 
 /* clock */
 setInterval(()=>{
-  document.getElementById("clock").innerText =
-    new Date().toLocaleTimeString();
+  document.getElementById("clock").innerText = new Date().toLocaleTimeString();
 },1000);
 </script>
 
@@ -216,788 +215,17 @@ setInterval(()=>{
 <script>
 particlesJS("particles-js",{
   particles:{
-    number:{value:80},
-    color:{value:"#00ffff"},
+    number:{value:100},
+    color:{value:"#ff00ff"},
     size:{value:3,random:true},
-    line_linked:{enable:true,color:"#00ffff"},
-    move:{speed:2}
+    line_linked:{enable:true,color:"#ff00ff",opacity:0.4},
+    move:{speed:3}
+  },
+  interactivity:{
+    events:{onhover:{enable:true,mode:"repulse"}}
   }
 });
 </script>
 
 </body>
-</html> height:140px;
- border-radius:50%;
- border:4px solid #00ffff;
- box-shadow:0 0 25px #00ffff,0 0 50px #00ffff;
- margin:0 auto 15px;
- background:url("https://i.ibb.co/fdKDQKX1/image.jpg") center/cover no-repeat;
-}
-.name{
- font-size:28px;color:#00ffff;
- text-shadow:0 0 15px #00ffff;
- animation:float 2.5s ease-in-out infinite;
-}
-@keyframes float{50%{transform:translateY(-6px)}}
-.socials{
- display:flex;justify-content:center;
- gap:15px;margin:18px 0;
-}
-.socials a{
- width:45px;height:45px;border-radius:50%;
- display:flex;align-items:center;justify-content:center;
- background:#000;color:#00ffff;
- font-size:20px;
- box-shadow:0 0 15px rgba(0,255,255,.6);
-}
-.clock{
- margin:15px auto;padding:8px 20px;
- border-radius:30px;background:#000;
- color:#00ffff;font-weight:bold;
- box-shadow:0 0 20px #00ffff;
- display:inline-block;
-}
-.terminal{
- margin-top:18px;color:#7CFF00;
- text-shadow:0 0 10px #7CFF00;
-}
-.music-btn{
- position:fixed;bottom:20px;right:20px;
- background:#00ffff;color:#000;
- padding:10px 16px;border-radius:30px;
- font-weight:bold;box-shadow:0 0 20px #00ffff;
- cursor:pointer;
-}
-</style>
-</head>
-
-<body>
-
-<div id="particles-js"></div>
-
-<audio id="bgMusic" loop>
- <source src="https://files.catbox.moe/1m2z6t.mp3" type="audio/mpeg">
-</audio>
-<div class="music-btn" onclick="playMusic()">▶ Music</div>
-
-<div class="container">
- <div class="card">
-  <div class="circle"></div>
-  <div class="name">Sharaf Uddin Official</div>
-
-  <div class="socials">
-   <a href="https://www.facebook.com/profile.php?id=61583304634209" target="_blank">
-    <i class="fab fa-facebook-f"></i>
-   </a>
-   <a href="https://www.tiktok.com/@mdraju_3m" target="_blank">
-    <i class="fab fa-tiktok"></i>
-   </a>
-   <a href="tg://resolve" target="_blank">
-    <i class="fab fa-telegram"></i>
-   </a>
-   <a href="#" target="_blank">
-    <i class="fab fa-instagram"></i>
-   </a>
-  </div>
-
-  <div class="clock" id="clock"></div>
-
-  <div class="terminal">
-   Hey 👋<br>
-   I'm Sharaf Uddin<br>
-   Welcome to my profile<br>
-   Developer & Cyber Expert
-  </div>
- </div>
-</div>
-
-<script>
-function playMusic(){
- document.getElementById("bgMusic").play();
- document.querySelector(".music-btn").style.display="none";
-}
-for(let i=0;i<40;i++){
- let s=document.createElement("div");
- s.className="snow";
- s.innerHTML="❄️";
- s.style.left=Math.random()*100+"vw";
- s.style.animationDuration=4+Math.random()*6+"s";
- s.style.fontSize=10+Math.random()*12+"px";
- document.body.appendChild(s);
-}
-setInterval(()=>{
- document.getElementById("clock").innerText=new Date().toLocaleTimeString();
-},1000);
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-particlesJS("particles-js",{
- particles:{
-  number:{value:80},
-  color:{value:"#00ffff"},
-  size:{value:3,random:true},
-  line_linked:{enable:true.card{
- background:rgba(0,0,0,.45);
- padding:30px;
- border-radius:20px;
- text-align:center;
- box-shadow:0 0 40px rgba(0,255,255,.35);
- max-width:380px;
- width:100%;
-}
-
-.profile{
- width:150px;
- height:150px;
- border-radius:50%;
- border:4px solid #00ffff;
- box-shadow:0 0 25px #00ffff;
- margin:0 auto 15px;
- background:url('https://i.ibb.co/fdKDQKX1/image.jpg') center/cover no-repeat;
-}
-
-.name{
- font-size:26px;
- color:#00ffff;
- text-shadow:0 0 15px #00ffff;
- margin-bottom:10px;
-}
-
-.socials{
- display:flex;
- justify-content:center;
- gap:15px;
- margin:18px 0;
-}
-.socials a{
- width:46px;height:46px;
- border-radius:50%;
- display:flex;
- align-items:center;
- justify-content:center;
- background:#000;
- color:#00ffff;
- font-size:20px;
- box-shadow:0 0 15px rgba(0,255,255,.6);
-}
-
-.clock{
- margin:15px auto;
- padding:8px 20px;
- border-radius:30px;
- background:#000;
- color:#00ffff;
- font-weight:bold;
- box-shadow:0 0 20px #00ffff;
- display:inline-block;
-}
-
-.terminal{
- margin-top:18px;
- color:#7CFF00;
- text-shadow:0 0 10px #7CFF00;
- font-size:15px;
-}
-
-.music-btn{
- position:fixed;
- bottom:20px;
- right:20px;
- background:#00ffff;
- color:#000;
- padding:12px 18px;
- border-radius:30px;
- font-weight:bold;
- box-shadow:0 0 20px #00ffff;
- cursor:pointer;
-}
-</style>
-</head>
-
-<body>
-
-<div id="particles-js"></div>
-
-<audio id="bgMusic" loop>
- <source src="https://files.catbox.moe/1m2z6t.mp3" type="audio/mpeg">
-</audio>
-
-<div class="music-btn" onclick="toggleMusic()">▶ Music</div>
-
-<div class="container">
- <div class="card">
-
-  <div class="profile"></div>
-  <div class="name">Sharaf Uddin Official</div>
-
-  <div class="socials">
-   <a href="https://www.facebook.com/profile.php?id=61583304634209" target="_blank">
-    <i class="fab fa-facebook-f"></i>
-   </a>
-   <a href="https://www.tiktok.com/@mdraju_3m" target="_blank">
-    <i class="fab fa-tiktok"></i>
-   </a>
-   <a href="tg://openmessage">
-    <i class="fab fa-telegram"></i>
-   </a>
-   <a href="#">
-    <i class="fab fa-instagram"></i>
-   </a>
-  </div>
-
-  <div class="clock" id="clock"></div>
-
-  <div class="terminal">
-   Hey 👋<br>
-   I'm Sharaf Uddin<br>
-   Welcome to my profile<br>
-   Developer & Cyber Expert
-  </div>
-
- </div>
-</div>
-
-<script>
-let playing=false;
-function toggleMusic(){
- const music=document.getElementById("bgMusic");
- const btn=document.querySelector(".music-btn");
- if(!playing){
-  music.play();
-  btn.innerText="⏸ Pause";
-  playing=true;
- }else{
-  music.pause();
-  btn.innerText="▶ Music";
-  playing=false;
- }
-}
-
-for(let i=0;i<45;i++){
- let s=document.createElement("div");
- s.className="snow";
- s.innerHTML="❄️";
- s.style.left=Math.random()*100+"vw";
- s.style.animationDuration=4+Math.random()*6+"s";
- s.style.fontSize=10+Math.random()*14+"px";
- document.body.appendChild(s);
-}
-
-setInterval(()=>{
- document.getElementById("clock").innerText=
- new Date().toLocaleTimeString();
-},1000);
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-particlesJS("particles-js",{
- particles:{
-  number:{value:80},
-  color:{value:"#00ffff"},
-  size:{value:3,random:true},
-  line_linked:{enable:true,color:"#00ffff"},
-  move:{speed:2}
- }
-});
-</script>
-
-</body>
-</html> margin:10px auto;
- background:#000;
-}
-
-.name{
- font-size:28px;
- color:#00ffff;
- text-shadow:0 0 15px #00ffff;
- margin:10px 0;
-}
-
-.socials{display:flex;justify-content:center;gap:14px;margin:15px 0}
-.socials a{
- width:48px;height:48px;border-radius:50%;
- background:#000;color:#00ffff;
- display:flex;align-items:center;justify-content:center;
- font-size:20px;
- box-shadow:0 0 15px rgba(0,255,255,.6);
-}
-
-.clock{
- display:inline-block;
- padding:8px 22px;
- border-radius:30px;
- background:#000;
- color:#00ffff;
- box-shadow:0 0 20px #00ffff;
- font-weight:bold;
- margin:15px 0;
-}
-
-.terminal{
- color:#7CFF00;
- text-shadow:0 0 10px #7CFF00;
- margin-top:15px;
-}
-
-.section-title{
- color:#00ffff;
- font-size:20px;
- margin-bottom:10px;
- text-shadow:0 0 10px #00ffff;
-}
-
-.box{
- border:2px solid #00ffff;
- border-radius:15px;
- padding:15px;
- margin-top:15px;
-}
-
-.skill-icons{
- display:flex;
- justify-content:space-around;
- font-size:26px;
- color:#00ffff;
- margin-top:10px;
-}
-
-.log{
- background:#000;
- color:#7CFF00;
- padding:15px;
- border-radius:12px;
- font-family:monospace;
- font-size:14px;
-}
-
-.tags{
- display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:10px
-}
-.tag{
- background:#111;
- padding:8px 14px;
- border-radius:20px;
- box-shadow:0 0 10px rgba(0,255,255,.4);
-}
-
-.music-btn{
- position:fixed;bottom:20px;right:20px;
- background:#00ffff;color:#000;
- padding:12px 18px;border-radius:30px;
- font-weight:bold;box-shadow:0 0 20px #00ffff;
-}
-</style>
-</head>
-
-<body>
-
-<div id="particles-js"></div>
-
-<audio id="bgMusic" loop>
- <source src="https://files.catbox.moe/1m2z6t.mp3" type="audio/mpeg">
-</audio>
-<div class="music-btn" onclick="playMusic()">▶ Music</div>
-
-<div class="container">
-
-<!-- PROFILE -->
-<div class="card">
- <div class="avatar"></div>
- <div class="name">Sharaf Uddin Official</div>
-
- <div class="socials">
-  <a href="https://www.facebook.com/profile.php?id=61583304634209" target="_blank"><i class="fab fa-facebook-f"></i></a>
-  <a href="https://www.tiktok.com/@mdraju_3m?_r=1&_t=ZS-92H5AfHBA1K" target="_blank"><i class="fab fa-tiktok"></i></a>
-  <a href="tg://resolve"><i class="fab fa-telegram"></i></a>
- </div>
-
- <div class="clock" id="clock"></div>
-
- <div class="terminal">
-  Hey 👋<br>
-  I'm Sharaf Uddin<br>
-  Welcome to my profile<br>
-  Developer & Cyber Expert
- </div>
-</div>
-
-<!-- SKILLS -->
-<div class="card">
- <div class="section-title">Skills</div>
- <div class="skill-icons">
-  <i class="fab fa-js"></i>
-  <i class="fab fa-html5"></i>
-  <i class="fab fa-css3-alt"></i>
-  <i class="fab fa-python"></i>
-  <i class="fab fa-php"></i>
- </div>
-</div>
-
-<!-- PROJECT -->
-<div class="card">
- <div class="section-title">Project Highlights</div>
- <div class="box">
-  Hover over a skill to see project details here.
- </div>
-</div>
-
-<!-- TERMINAL LOG -->
-<div class="card">
- <div class="log">
- Initializing system...<br>
- Loading modules...<br>
- Accessing secure server...<br>
- Decrypting data...<br>
- Connection established ✅<br>
- Running scripts...<br>
- Monitoring network traffic...
- </div>
-</div>
-
-<!-- ABOUT -->
-<div class="card">
- <div class="section-title">About Me</div>
- Hi, I'm Sharaf Uddin, a passionate developer & cyber expert.  
- I love automation, bots, and cybersecurity.
-</div>
-
-<!-- TAGS -->
-<div class="card">
- <div class="tags">
-  <div class="tag">Bot Creator</div>
-  <div class="tag">Cybersecurity</div>
-  <div class="tag">Automation</div>
-  <div class="tag">Always Learning</div>
- </div>
-</div>
-
-</div>
-
-<script>
-function playMusic(){
- document.getElementById("bgMusic").play();
- document.querySelector(".music-btn").style.display="none";
-}
-setInterval(()=>{
- document.getElementById("clock").innerText=new Date().toLocaleTimeString();
-},1000);
-
-for(let i=0;i<35;i++){
- let s=document.createElement("div");
- s.className="snow";
- s.innerHTML="❄️";
- s.style.left=Math.random()*100+"vw";
- s.style.animationDuration=4+Math.random()*6+"s";
- s.style.fontSize=10+Math.random()*12+"px";
- document.body.appendChild(s);
-}
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-particlesJS("particles-js",{
- particles:{
-  number:{value:70},
-  color:{value:"#00ffff"},
-  size:{value:3,random:true},
-  line_linked:{enable:true,color:"#00ffff"},
-  move:{speed:2}
- }
-});
-</script>
-
-</body>
-</html>/* center */
-.container{
- min-height:100vh;
- display:flex;
- justify-content:center;
- align-items:center;
-}
-
-/* card */
-.card{
- background:rgba(0,0,0,.45);
- padding:30px;
- border-radius:18px;
- text-align:center;
- box-shadow:0 0 35px rgba(0,255,255,.35);
-}
-
-/* circle */
-.circle{
- width:140px;
- height:140px;
- border-radius:50%;
- border:4px solid #00ffff;
- box-shadow:0 0 25px #00ffff,0 0 50px #00ffff;
- margin:0 auto 15px;
-}
-
-/* name */
-.name{
- font-size:28px;
- color:#00ffff;
- text-shadow:0 0 15px #00ffff;
- animation:float 2.5s ease-in-out infinite;
-}
-@keyframes float{
- 50%{transform:translateY(-6px)}
-}
-
-/* socials */
-.socials{
- display:flex;
- justify-content:center;
- gap:15px;
- margin:18px 0;
-}
-.socials a{
- width:45px;
- height:45px;
- border-radius:50%;
- display:flex;
- align-items:center;
- justify-content:center;
- background:#000;
- color:#00ffff;
- font-size:20px;
- box-shadow:0 0 15px rgba(0,255,255,.6);
- transition:.3s;
-}
-.socials a:hover{
- transform:scale(1.15);
- background:#00ffff;
- color:#000;
-}
-
-/* clock */
-.clock{
- margin:15px auto;
- padding:8px 20px;
- border-radius:30px;
- background:#000;
- color:#00ffff;
- font-weight:bold;
- box-shadow:0 0 20px #00ffff;
- display:inline-block;
-}
-
-/* terminal */
-.terminal{
- margin-top:18px;
- color:#7CFF00;
- text-shadow:0 0 10px #7CFF00;
-}
-
-/* music */
-.music-btn{
- position:fixed;
- bottom:20px;
- right:20px;
- background:#00ffff;
- color:#000;
- padding:10px 16px;
- border-radius:30px;
- font-weight:bold;
- box-shadow:0 0 20px #00ffff;
- cursor:pointer;
-}
-</style>
-</head>
-
-<body>
-
-<div id="particles-js"></div>
-
-<!-- MUSIC -->
-<audio id="bgMusic" loop>
- <source src="https://files.catbox.moe/1m2z6t.mp3" type="audio/mpeg">
-</audio>
-<div class="music-btn" onclick="playMusic()">▶ Music</div>
-
-<div class="container">
- <div class="card">
-  <div class="circle"></div>
-
-  <div class="name">Sharaf Uddin Official</div>
-
-  <!-- SOCIAL LINKS -->
-  <div class="socials">
-   <a href="https://www.facebook.com/profile.php?id=61583304634209" target="_blank">
-    <i class="fab fa-facebook-f"></i>
-   </a>
-
-   <a href="https://www.tiktok.com/@mdraju_3m?_r=1&_t=ZS-92H5AfHBA1K" target="_blank">
-    <i class="fab fa-tiktok"></i>
-   </a>
-
-   <!-- Telegram: ONLY APP OPEN -->
-   <a href="tg://">
-    <i class="fab fa-telegram"></i>
-   </a>
-
-   <!-- Instagram: ONLY APP OPEN -->
-   <a href="instagram://app">
-    <i class="fab fa-instagram"></i>
-   </a>
-  </div>
-
-  <div class="clock" id="clock">00:00:00</div>
-
-  <div class="terminal">
-   Hey 👋<br>
-   I'm Sharaf Uddin<br>
-   Welcome to my profile<br>
-   Developer & Cyber Expert
-  </div>
- </div>
-</div>
-
-<script>
-function playMusic(){
- document.getElementById("bgMusic").play();
- document.querySelector(".music-btn").style.display="none";
-}
-
-/* snow */
-for(let i=0;i<40;i++){
- let s=document.createElement("div");
- s.className="snow";
- s.innerHTML="❄️";
- s.style.left=Math.random()*100+"vw";
- s.style.animationDuration=4+Math.random()*6+"s";
- s.style.fontSize=10+Math.random()*12+"px";
- document.body.appendChild(s);
-}
-
-/* clock */
-setInterval(()=>{
- document.getElementById("clock").innerText =
-  new Date().toLocaleTimeString();
-},1000);
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-particlesJS("particles-js",{
- particles:{
-  number:{value:80},
-  color:{value:"#00ffff"},
-  size:{value:3,random:true},
-  line_linked:{enable:true,color:"#00ffff"},
-  move:{speed:2}
- }
-});
-</script>
-
-</body>
-</html> border:4px solid #00ffff;
- box-shadow:0 0 25px #00ffff,0 0 50px #00ffff;
- margin:0 auto 15px;
-}
-.name{
- font-size:28px;color:#00ffff;
- text-shadow:0 0 15px #00ffff;
- animation:float 2.5s ease-in-out infinite;
-}
-@keyframes float{50%{transform:translateY(-6px)}}
-.socials{
- display:flex;justify-content:center;
- gap:15px;margin:18px 0;
-}
-.socials a{
- width:45px;height:45px;border-radius:50%;
- display:flex;align-items:center;justify-content:center;
- background:#000;color:#00ffff;
- font-size:20px;
- box-shadow:0 0 15px rgba(0,255,255,.6);
-}
-.clock{
- margin:15px auto;padding:8px 20px;
- border-radius:30px;background:#000;
- color:#00ffff;font-weight:bold;
- box-shadow:0 0 20px #00ffff;
- display:inline-block;
-}
-.terminal{
- margin-top:18px;color:#7CFF00;
- text-shadow:0 0 10px #7CFF00;
-}
-.music-btn{
- position:fixed;bottom:20px;right:20px;
- background:#00ffff;color:#000;
- padding:10px 16px;border-radius:30px;
- font-weight:bold;box-shadow:0 0 20px #00ffff;
-}
-</style>
-</head>
-
-<body>
-
-<div id="particles-js"></div>
-
-<audio id="bgMusic" loop>
- <source src="https://files.catbox.moe/1m2z6t.mp3" type="audio/mpeg">
-</audio>
-<div class="music-btn" onclick="playMusic()">▶ Music</div>
-
-<div class="container">
- <div class="card">
-  <div class="circle"></div>
-  <div class="name">Sharaf Uddin Official</div>
-
-  <div class="socials">
-   <a href="#"><i class="fab fa-facebook-f"></i></a>
-   <a href="#"><i class="fab fa-tiktok"></i></a>
-   <a href="#"><i class="fab fa-telegram"></i></a>
-   <a href="#"><i class="fab fa-instagram"></i></a>
-  </div>
-
-  <div class="clock" id="clock"></div>
-
-  <div class="terminal">
-   Hey 👋<br>
-   I'm Sharaf Uddin<br>
-   Welcome to my profile<br>
-   Developer & Cyber Expert
-  </div>
- </div>
-</div>
-
-<script>
-function playMusic(){
- document.getElementById("bgMusic").play();
- document.querySelector(".music-btn").style.display="none";
-}
-for(let i=0;i<40;i++){
- let s=document.createElement("div");
- s.className="snow";
- s.innerHTML="❄️";
- s.style.left=Math.random()*100+"vw";
- s.style.animationDuration=4+Math.random()*6+"s";
- s.style.fontSize=10+Math.random()*12+"px";
- document.body.appendChild(s);
-}
-setInterval(()=>{
- document.getElementById("clock").innerText=new Date().toLocaleTimeString();
-},1000);
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-particlesJS("particles-js",{
- particles:{
-  number:{value:80},
-  color:{value:"#00ffff"},
-  size:{value:3,random:true},
-  line_linked:{enable:true,color:"#00ffff"},
-  move:{speed:2}
- }
-});
-</script>
-
-</body>
-                    </html>
+</html>
