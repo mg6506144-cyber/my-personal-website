@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Cyber Profile</title>
+<title>Sharaf Uddin Official</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -14,7 +14,7 @@ body{
   background:#0a001f;
   color:#fff;
   font-family:Arial,Helvetica,sans-serif;
-  overflow:hidden;
+  overflow-x:hidden;
 }
 
 /* particles */
@@ -32,7 +32,7 @@ body{
   font-family:monospace;
   font-size:18px;
   animation:fall linear infinite;
-  opacity:0.6;
+  opacity:.6;
   z-index:-2;
 }
 @keyframes fall{
@@ -47,11 +47,11 @@ body{
   align-items:center;
 }
 .card{
-  background:rgba(0,0,0,.5);
+  background:rgba(0,0,0,.55);
   padding:30px;
-  border-radius:18px;
+  border-radius:20px;
   text-align:center;
-  box-shadow:0 0 35px rgba(255,0,255,.4);
+  box-shadow:0 0 40px rgba(255,0,255,.5);
 }
 
 /* profile image */
@@ -60,7 +60,7 @@ body{
   height:140px;
   border-radius:50%;
   border:4px solid #ff00ff;
-  box-shadow:0 0 25px #ff00ff,0 0 50px #ff00ff;
+  box-shadow:0 0 25px #ff00ff,0 0 55px #ff00ff;
   margin:0 auto 15px;
   object-fit:cover;
 }
@@ -69,7 +69,7 @@ body{
 .name{
   font-size:28px;
   color:#ff00ff;
-  text-shadow:0 0 15px #ff00ff;
+  text-shadow:0 0 18px #ff00ff;
   animation:float 2.5s ease-in-out infinite;
 }
 @keyframes float{
@@ -93,11 +93,11 @@ body{
   background:#000;
   color:#ff00ff;
   font-size:20px;
-  box-shadow:0 0 15px rgba(255,0,255,.6);
+  box-shadow:0 0 18px rgba(255,0,255,.6);
   transition:.3s;
 }
 .socials a:hover{
-  transform:scale(1.15);
+  transform:scale(1.2);
   background:#ff00ff;
   color:#000;
 }
@@ -105,12 +105,12 @@ body{
 /* clock */
 .clock{
   margin:15px auto;
-  padding:8px 20px;
+  padding:8px 22px;
   border-radius:30px;
   background:#000;
   color:#ff00ff;
   font-weight:bold;
-  box-shadow:0 0 20px #ff00ff;
+  box-shadow:0 0 22px #ff00ff;
   display:inline-block;
 }
 
@@ -118,7 +118,8 @@ body{
 .terminal{
   margin-top:18px;
   color:#00ffcc;
-  text-shadow:0 0 10px #00ffcc;
+  text-shadow:0 0 12px #00ffcc;
+  line-height:1.5;
 }
 
 /* music */
@@ -128,11 +129,12 @@ body{
   right:20px;
   background:#ff00ff;
   color:#000;
-  padding:10px 16px;
+  padding:10px 18px;
   border-radius:30px;
   font-weight:bold;
-  box-shadow:0 0 20px #ff00ff;
+  box-shadow:0 0 25px #ff00ff;
   cursor:pointer;
+  z-index:5;
 }
 </style>
 </head>
@@ -141,46 +143,37 @@ body{
 
 <div id="particles-js"></div>
 
-<!-- MUSIC (Royalty-free cyberpunk track from Pixabay) -->
+<!-- MUSIC -->
 <audio id="bgMusic" loop>
-  <source src="https://cdn.pixabay.com/download/audio/2022/08/15/audio_3d3b8c8a0c.mp3?filename=cyberpunk-121110.mp3" type="audio/mpeg">
+  <source src="https://cdn.pixabay.com/download/audio/2022/08/15/audio_3d3b8c8a0c.mp3" type="audio/mpeg">
 </audio>
 
-<div class="music-btn" onclick="playMusic()">▶ Play Music</div>
+<div class="music-btn" onclick="playMusic()">▶ Music</div>
 
 <div class="container">
   <div class="card">
 
-    <!-- তোমার নিজের ছবি চেঞ্জ করো, এটা উদাহরণ -->
     <img 
-      src="https://img.freepik.com/premium-photo/portrait-young-man-with-vr-glasses-immersed-virtual-reality-abstract-neon-light-surreal-background-creative-art-technology-metauniverse-3d-rendering-ai-generated_187882-3875.jpg"
+      src="https://i.ibb.co/fdKDQKX1/image.jpg"
       class="profile-img"
-      alt="My Profile">
+      alt="Sharaf Uddin">
 
-    <div class="name">Your Name Official</div>
+    <div class="name">Sharaf Uddin Official</div>
 
     <div class="socials">
-      <a href="https://facebook.com/yourprofile" target="_blank">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://tiktok.com/@yourusername" target="_blank">
-        <i class="fab fa-tiktok"></i>
-      </a>
-      <a href="https://youtube.com/@yourchannel" target="_blank">
-        <i class="fab fa-youtube"></i>
-      </a>
-      <a href="https://github.com/yourusername" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
+      <a href="https://www.facebook.com/profile.php?id=61583304634209" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.tiktok.com/@mdraju_3m?_r=1&_t=ZS-92H5AfHBA1K" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="tg://"><i class="fab fa-telegram"></i></a>
+      <a href="instagram://app"><i class="fab fa-instagram"></i></a>
     </div>
 
     <div class="clock" id="clock">00:00:00</div>
 
     <div class="terminal">
-      Hey Hacker 👾<br>
-      I'm [Your Name]<br>
+      Hey 👋<br>
+      I'm Sharaf Uddin<br>
       Welcome to my digital world<br>
-      Full Stack Developer & Ethical Hacker
+      Developer & Cyber Expert
     </div>
 
   </div>
@@ -189,25 +182,24 @@ body{
 <script>
 function playMusic(){
   const music = document.getElementById("bgMusic");
-  music.play();
+  music.play().catch(()=>{});
   document.querySelector(".music-btn").style.display="none";
 }
 
-/* digital rain (Matrix style) */
-const chars = "01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン";
-for(let i=0;i<50;i++){
-  let r = document.createElement("div");
+/* digital rain */
+const chars="01アイウエオカキクケコサシスセソ";
+for(let i=0;i<60;i++){
+  let r=document.createElement("div");
   r.className="rain";
-  r.innerText = chars[Math.floor(Math.random()*chars.length)];
-  r.style.left = Math.random()*100 + "vw";
-  r.style.animationDuration = 2 + Math.random()*4 + "s";
-  r.style.animationDelay = Math.random()*5 + "s";
+  r.innerText=chars[Math.floor(Math.random()*chars.length)];
+  r.style.left=Math.random()*100+"vw";
+  r.style.animationDuration=2+Math.random()*3+"s";
   document.body.appendChild(r);
 }
 
 /* clock */
 setInterval(()=>{
-  document.getElementById("clock").innerText = new Date().toLocaleTimeString();
+  document.getElementById("clock").innerText=new Date().toLocaleTimeString();
 },1000);
 </script>
 
@@ -215,15 +207,13 @@ setInterval(()=>{
 <script>
 particlesJS("particles-js",{
   particles:{
-    number:{value:100},
+    number:{value:100,density:{enable:true,value_area:800}},
     color:{value:"#ff00ff"},
     size:{value:3,random:true},
-    line_linked:{enable:true,color:"#ff00ff",opacity:0.4},
-    move:{speed:3}
+    line_linked:{enable:true,color:"#ff00ff",opacity:.4},
+    move:{speed:2}
   },
-  interactivity:{
-    events:{onhover:{enable:true,mode:"repulse"}}
-  }
+  retina_detect:true
 });
 </script>
 
